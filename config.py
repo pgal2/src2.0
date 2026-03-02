@@ -1,7 +1,7 @@
 import os
 
 # Bot token @Botfather
-BOT_TOKEN = os.environ.get("BOT_TOKEN", "8580917057:AAFUgaasKlrw0UucZoiRebkG1V_zxMm7-vc")
+BOT_TOKEN = os.environ.get("BOT_TOKEN", "")
 
 # Your API ID from my.telegram.org
 API_ID = int(os.environ.get("API_ID", "29490954"))
@@ -42,4 +42,5 @@ ERROR_MESSAGE = bool(os.environ.get('ERROR_MESSAGE', True))
 CRYPTO_PAY_API_TOKEN = os.environ.get("CRYPTO_PAY_API_TOKEN", "")  # Your Crypto Pay API token
 
 CRYPTO_PAY_TESTNET = os.environ.get("CRYPTO_PAY_TESTNET", "False").lower() == "true"  # Set to True for testing with @CryptoTestnetBot
+
 
