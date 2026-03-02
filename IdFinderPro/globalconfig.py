@@ -19,7 +19,7 @@ Manage bot-wide settings and pricing.
 • **1 Day Price:** ₹{settings.get('pricing_1day', 10)}
 • **7 Days Price:** ₹{settings.get('pricing_7day', 40)}
 • **30 Days Price:** ₹{settings.get('pricing_30day', 100)}
-• **Admin Handle:** {settings.get('admin_telegram_handle', '@tataa_sumo')}
+• **Admin Handle:** {settings.get('admin_telegram_handle', '@Kmxretro')}
 • **Free Daily Limit:** {settings.get('free_daily_limit', 10)} downloads
 • **Premium Daily Limit:** {settings.get('premium_daily_limit', 'Unlimited')}"""
     
@@ -78,7 +78,7 @@ Send /cancel to cancel."""
     
     elif data == "gc_admin":
         settings = await db.get_all_global_settings()
-        admin_handle = settings.get('admin_telegram_handle', '@tataa_sumo')
+        admin_handle = settings.get('admin_telegram_handle', '@Kmxretro')
         
         globalconfig_state[user_id] = {'action': 'edit_admin'}
         
@@ -145,7 +145,7 @@ Manage bot-wide settings and pricing.
 • **1 Day Price:** ₹{settings.get('pricing_1day', 10)}
 • **7 Days Price:** ₹{settings.get('pricing_7day', 40)}
 • **30 Days Price:** ₹{settings.get('pricing_30day', 100)}
-• **Admin Handle:** {settings.get('admin_telegram_handle', '@tataa_sumo')}
+• **Admin Handle:** {settings.get('admin_telegram_handle', '@Kmxretro')}
 • **Free Daily Limit:** {settings.get('free_daily_limit', 10)} downloads
 • **Premium Daily Limit:** {settings.get('premium_daily_limit', 'Unlimited')}"""
         
@@ -223,3 +223,4 @@ async def handle_globalconfig_input(client: Client, message: Message):
         
         except ValueError:
             await message.reply("❌ **Invalid input!**\n\nPlease send a number (e.g., 20)")
+
