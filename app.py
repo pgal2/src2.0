@@ -8,7 +8,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello_world():
-    return 'Bot is running! Restricted Content Download Bot by @idfinderpro'
+    return 'Bot is running! Restricted Content Download Bot by @thekmx'
 
 @app.route('/health')
 def health_check():
@@ -127,4 +127,5 @@ async def activate_premium_from_webhook(invoice_id, user_id, plan, paid_amount, 
 if __name__ == "__main__":
     port = int(os.environ.get('PORT', 8080))
     app.run(host='0.0.0.0', port=port, debug=False)
+
 
