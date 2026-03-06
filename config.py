@@ -32,7 +32,7 @@ FORCE_SUB_CHANNEL = "thekmx"  # Channel username without @
 FORCE_SUB_CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002441460670"))
 
 # Log Channel - Set to 0 to disable logging
-LOG_CHANNEL_ID = int(os.environ.get("LOG_CHANNEL_ID", "-1003689436454"))
+LOG_CHANNEL_ID = int(os.environ.get("LOG_CHANNEL_ID", "0"))
 
 # If You Want Error Message In Your Personal Message Then Turn It True Else If You Don't Want Then Flase
 ERROR_MESSAGE = bool(os.environ.get('ERROR_MESSAGE', True))
@@ -42,5 +42,6 @@ ERROR_MESSAGE = bool(os.environ.get('ERROR_MESSAGE', True))
 CRYPTO_PAY_API_TOKEN = os.environ.get("CRYPTO_PAY_API_TOKEN", "")  # Your Crypto Pay API token
 
 CRYPTO_PAY_TESTNET = os.environ.get("CRYPTO_PAY_TESTNET", "False").lower() == "true"  # Set to True for testing with @CryptoTestnetBot
+
 
 
